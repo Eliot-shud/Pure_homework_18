@@ -10,5 +10,5 @@ class Genre(db.Model):
 
 
 class GenreSchema(Schema):
-    id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(255))
+    id = fields.Int()
+    name = fields.Str()
